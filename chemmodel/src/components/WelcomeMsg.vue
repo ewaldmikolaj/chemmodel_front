@@ -1,12 +1,12 @@
 <template>
-  <div>
-      <h2>Welcome to the Chem Model Project!</h2>
-      <p>Our site allows converting chemical formula to its structural shape. We strongly advise to look up our FAQ page before first use. However if u want to use our page now, there are some rules:</p>
-      <ul>
-        <li>Formula field is case sensitive, eg CH4 is not equal to cH4 or ch4</li>
-        <li>After pressing Calculate page will try to reload, which is normal, This is an indicator thet algorithm is working.</li>
-        <li>Our solution use only some elements, look up FAQ to learn more.</li>
-        <li>Login to save results for later.</li>
+  <div class="welcome-block">
+      <h2 class="welcome-block__header">Welcome to the Chem Model Project!</h2>
+      <p class="welcome-block__text">Our site allows converting chemical formula to its structural shape. We strongly advise to look up our FAQ page before first use. However if u want to use our page now, there are some rules:</p>
+      <ul class="welcome-block__list">
+        <li class="welcome-block__rule">Formula field is case sensitive, eg CH4 is not equal to cH4 or ch4</li>
+        <li class="welcome-block__rule">After pressing Calculate page will try to reload, which is normal, This is an indicator thet algorithm is working.</li>
+        <li class="welcome-block__rule">Our solution use only some elements, look up FAQ to learn more.</li>
+        <li class="welcome-block__rule">Login to save results for later.</li>
       </ul>
   </div>
 </template>
@@ -18,5 +18,20 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-
+.welcome-block {
+  height: 50%;
+  width: 100%;
+  background-color: #1d201f;
+  padding: 30px;
+  line-height: 30px;
+  box-sizing: border-box;
+  font-size: 1.5rem;
+  &__header {
+    color: #f0052c;
+  }
+  &__list {
+    margin-top: 20px;
+    list-style: none;
+  }
+}
 </style>

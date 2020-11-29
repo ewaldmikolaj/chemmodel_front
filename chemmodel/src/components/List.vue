@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="list">
     <ListElem :content="'Home'"/>
     <ListElem :content="'FAQ'"/>
     <ListElem :content="'Log in'"/>
@@ -18,3 +18,16 @@ export default {
   }
 }
 </script>
+
+<style lang="scss" scoped>
+.list {
+  display: flex;
+  flex-direction: column;
+  width: 18%;
+  height: 100vh;
+  box-sizing: border-box;
+  padding-left: 20px;
+  color: white;
+  background-color: #1d201f;
+}
+</style>

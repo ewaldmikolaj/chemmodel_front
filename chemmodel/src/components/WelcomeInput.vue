@@ -1,9 +1,9 @@
 <template>
-  <div>
+  <div class="welcome-input">
     <h2>Enter your formula</h2>
     <div>
       <input type="text" v-model="formula">
-      <button></button>
+      <button @onclik="send()"></button>
     </div>
   </div>
 </template>
@@ -15,6 +15,18 @@ export default {
     return {
       formula: null
     }
+  },
+  methods: {
+    send () {
+      return this.formula
+    }
   }
 }
 </script>
+
+<style lang="scss" scoped>
+.welcome-input {
+  height: 50%;
+  widows: 100%;
+}
+</style>

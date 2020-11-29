@@ -1,30 +1,32 @@
 <template>
-  <div id="app">
-    <List/>
-    <WelcomeMsg/>
+  <div class="app">
+    <router-view/>
   </div>
 </template>
 
 <script>
-import WelcomeMsg from './components/WelcomeMsg.vue'
-import List from './components/List.vue'
-
 export default {
-  components: {
-    WelcomeMsg,
-    List
-  }
 }
 </script>
 
 <style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+* {
+  margin: 0;
+  padding: 0;
+}
+.app {
   display: flex;
   flex-direction: row;
+  width: 100vw;
+  height: 100vh;
+  background-color: #131514;
+  color: white;
+  &__right {
+    display: inline-block;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 100px 50px 70px 40px;
+  }
 }
 </style>
