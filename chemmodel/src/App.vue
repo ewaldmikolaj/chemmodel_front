@@ -1,11 +1,21 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link>
-    </div>
-    <router-view/>
+    <List/>
+    <WelcomeMsg/>
   </div>
 </template>
+
+<script>
+import WelcomeMsg from './components/WelcomeMsg.vue'
+import List from './components/List.vue'
+
+export default {
+  components: {
+    WelcomeMsg,
+    List
+  }
+}
+</script>
 
 <style lang="scss">
 #app {
@@ -14,18 +24,7 @@
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-}
-
-#nav {
-  padding: 30px;
-
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
+  display: flex;
+  flex-direction: row;
 }
 </style>
