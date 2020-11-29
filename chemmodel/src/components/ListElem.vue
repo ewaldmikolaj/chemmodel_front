@@ -1,5 +1,5 @@
 <template>
-  <div class="list__elem">{{ content }}</div>
+  <router-link :to="{ name: route }" class="list__elem">{{ content }}</router-link>
 </template>
 
 <script>
@@ -9,6 +9,10 @@ export default {
     content: {
       type: String,
       default: ''
+    },
+    route: {
+      type: String,
+      default: '/'
     }
   }
 }
@@ -19,5 +23,7 @@ export default {
   margin-bottom: 10px;
   width: 100%;
   font-size: 1.7rem;
+  text-decoration: none;
+  color: white;
 }
 </style>

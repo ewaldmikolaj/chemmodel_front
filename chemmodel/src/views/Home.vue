@@ -1,7 +1,7 @@
 <template>
-  <div class="welcome">
+  <div class="home">
     <List/>
-    <div class="welcome__right">
+    <div class="home__right">
       <WelcomeInput/>
       <WelcomeMsg/>
     </div>
@@ -14,7 +14,7 @@ import List from './../components/List.vue'
 import WelcomeInput from './../components/WelcomeInput.vue'
 
 export default {
-  name: 'Welcome',
+  name: 'Home',
   components: {
     WelcomeMsg,
     List,
@@ -24,8 +24,7 @@ export default {
 </script>
 
 <style lang="scss">
-
-.welcome {
+.home {
   display: flex;
   flex-direction: row;
   width: 100vw;

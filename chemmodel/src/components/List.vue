@@ -1,10 +1,10 @@
 <template>
   <div class="list">
-    <ListElem :content="'Home'"/>
-    <ListElem :content="'FAQ'"/>
-    <ListElem :content="'Log in'"/>
-    <ListElem :content="'Sign up'"/>
-    <ListElem :content="'Guest'"/>
+    <ListElem :route="'home'" :content="'Home'"/>
+    <ListElem :route="'faq'" :content="'FAQ'"/>
+    <ListElem :route="'login'" :content="'Log in'"/>
+    <ListElem :route="'signup'" :content="'Sign up'"/>
+    <ListElem :route="'guest'" :content="'Guest'"/>
   </div>
 </template>
 
