@@ -28,18 +28,36 @@ export default {
 <style lang="scss" scoped>
 .faq-answers {
   box-sizing: border-box;
-  width: 70%;
-  padding: 20px;
+  padding: 10px;
   background-color: #1d201f;
+  font-size: 0.7rem;
   &__header {
     color:#f0052c;
-    margin: 20px 0px 30px 10px;
+    margin: 5px 0px 15px 10px;
   }
   &__question {
-    margin: 10px 0px 15px 0px;
+    margin: 5px 0px 5px 0px;
   }
   &__text {
     margin-left: 5px;
+  }
+}
+
+@media screen and (min-device-width: 768px) {
+  .faq-answers {
+    font-size: 1.4rem;
+  }
+}
+
+@media screen and (min-device-width: 1024px) {
+  .faq-answers {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (min-device-width: 1224px) {
+  .faq-answers {
+    font-size: 1.5rem
   }
 }
 </style>

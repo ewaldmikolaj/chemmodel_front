@@ -24,12 +24,5 @@ export default {
   height: 100vh;
   background-color: #131514;
   color: white;
-  &__right {
-    display: inline-block;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    padding: 100px 50px 70px 40px;
-  }
 }
 </style>

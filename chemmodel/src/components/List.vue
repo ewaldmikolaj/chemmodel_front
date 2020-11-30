@@ -25,10 +25,16 @@ export default {
   flex-direction: row;
   justify-content: flex-end;
   width: 100%;
-  height: 80px;
+  height: 50px;
   box-sizing: border-box;
   padding-left: 20px;
   color: white;
   background-color: #1d201f;
+}
+
+@media screen and (min-device-width: 768px) {
+  .list {
+    height: 80px
+  }
 }
 </style>

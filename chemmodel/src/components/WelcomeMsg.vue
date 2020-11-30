@@ -20,13 +20,13 @@ export default {
 <style lang="scss" scoped>
 .welcome-block {
   background-color: #1d201f;
-  padding: 30px;
-  line-height: 30px;
+  padding: 5px;
+  line-height: 20px;
   box-sizing: border-box;
-  font-size: 1.5rem;
+  font-size: 0.75rem;
   &__header {
     color: #f0052c;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
   }
   &__list {
     margin: 20px 0px 0px 10px;

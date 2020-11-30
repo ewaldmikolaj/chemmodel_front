@@ -4,7 +4,7 @@
     <div class="welcome-input__wrapper">
     <h2 class="welcome-input__text">Enter your formula</h2>
       <input placeholder="E.g. C2H5OH" class="welcome-input__input" type="text" v-model="formula">
-      <button class="welcome-input__button" @onclik="send()">CALCULATE</button>
+      <button class="welcome-input__button" @click="send()">CALCULATE</button>
     </div>
   </div>
 </template>
@@ -19,7 +19,7 @@ export default {
   },
   methods: {
     send () {
-      return this.formula
+      console.log('dupa')
     }
   }
 }
@@ -27,26 +27,24 @@ export default {
 
 <style lang="scss" scoped>
 .welcome-input {
-  height: 50%;
-  widows: 100%;
   box-sizing: border-box;
+  margin-bottom: 30px;
   &__wrapper {
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
-    width: 70%;
   }
   &__header {
-    margin-bottom: 70px;
+    margin-bottom: 40px;
   }
   &__text {
     width: 100%;
+    font-size: 0.8rem;
     margin: 0px 0px 10px 10px;
   }
   &__input {
-    font-size: 1.2rem;
+    font-size: 1rem;
     border: 0px;
-    padding: 10px;
+    padding: 2px;
     width: 60%;
   }
   &__input:focus, &__button:focus {
@@ -54,11 +52,12 @@ export default {
   }
   &__button {
     background-color: #f0052c;
-    padding: 10px;
+    padding: 7px;
     border: 0px;
     color: white;
     transition: .4s;
     font-weight: bold;
+    font-size: 0.8rem;
   }
   &__button:hover {
     background-color: #770317;

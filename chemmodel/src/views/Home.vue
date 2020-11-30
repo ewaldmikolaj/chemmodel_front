@@ -27,10 +27,9 @@ export default {
   display: flex;
   flex-direction: column;
   width: 100vw;
-  height: 100vh;
   background-color: #131514;
   color: white;
-  padding: 150px 100px 100px 100px;
+  padding: 70px 20px 20px 20px;
   box-sizing: border-box;
 }
 </style>

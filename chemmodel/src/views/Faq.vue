@@ -29,7 +29,13 @@ export default {
   height: 100vh;
   background-color: #131514;
   color: white;
-  padding: 150px 100px 100px 100px;
+  padding: 0px 10px 0px 10px;
   box-sizing: border-box;
+}
+
+@media screen and (min-device-width: 768px) {
+  .faq {
+    padding: 0px 30px 0px 30px;
+  }
 }
 </style>
