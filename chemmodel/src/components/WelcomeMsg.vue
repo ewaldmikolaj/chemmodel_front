@@ -19,8 +19,6 @@ export default {
 
 <style lang="scss" scoped>
 .welcome-block {
-  height: 50%;
-  width: 100%;
   background-color: #1d201f;
   padding: 30px;
   line-height: 30px;
@@ -28,9 +26,10 @@ export default {
   font-size: 1.5rem;
   &__header {
     color: #f0052c;
+    margin-bottom: 20px;
   }
   &__list {
-    margin-top: 20px;
+    margin: 20px 0px 0px 10px;
     list-style: none;
   }
 }

@@ -1,10 +1,8 @@
 <template>
   <div class="home">
     <List/>
-    <div class="home__right">
-      <WelcomeInput/>
-      <WelcomeMsg/>
-    </div>
+    <WelcomeInput/>
+    <WelcomeMsg/>
   </div>
 </template>
 
@@ -25,18 +23,14 @@ export default {
 
 <style lang="scss">
 .home {
+  position: relative;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   width: 100vw;
   height: 100vh;
   background-color: #131514;
   color: white;
-  &__right {
-    display: inline-block;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    padding: 100px 50px 70px 40px;
-  }
+  padding: 150px 100px 100px 100px;
+  box-sizing: border-box;
 }
 </style>
