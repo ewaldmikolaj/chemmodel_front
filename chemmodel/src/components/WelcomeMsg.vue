@@ -29,8 +29,15 @@ export default {
     margin-bottom: 10px;
   }
   &__list {
-    margin: 20px 0px 0px 10px;
+    margin: 5px 0px 0px 10px;
     list-style: none;
+  }
+}
+
+@media screen and (min-device-width: 768px) {
+  .welcome-block {
+    font-size: 1.3rem;
+    line-height: 50px;
   }
 }
 </style>

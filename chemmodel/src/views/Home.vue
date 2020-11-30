@@ -26,10 +26,17 @@ export default {
   position: relative;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   width: 100vw;
   background-color: #131514;
   color: white;
-  padding: 70px 20px 20px 20px;
+  padding: 0px 20px 0px 20px;
   box-sizing: border-box;
+}
+
+@media screen and (min-device-width: 768px) {
+  .home {
+    padding: 0px 40px 0px 40px;
+  }
 }
 </style>

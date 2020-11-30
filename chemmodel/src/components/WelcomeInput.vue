@@ -2,7 +2,7 @@
   <div class="welcome-input">
     <h1 class="welcome-input__header">Chem Model</h1>
     <div class="welcome-input__wrapper">
-    <h2 class="welcome-input__text">Enter your formula</h2>
+      <h2 class="welcome-input__text">Enter your formula</h2>
       <input placeholder="E.g. C2H5OH" class="welcome-input__input" type="text" v-model="formula">
       <button class="welcome-input__button" @click="send()">CALCULATE</button>
     </div>
@@ -34,7 +34,7 @@ export default {
     flex-wrap: wrap;
   }
   &__header {
-    margin-bottom: 40px;
+    margin: 10px 0px 10px 0px;
   }
   &__text {
     width: 100%;
@@ -61,6 +61,22 @@ export default {
   }
   &__button:hover {
     background-color: #770317;
+  }
+}
+
+@media screen and (min-device-width: 768px) {
+  .welcome-input {
+    &__input {
+      width: 40%;
+      padding: 5px;
+      font-size: 2rem;
+    }
+    &__text {
+      font-size: 1.2rem;
+    }
+    &__button {
+      font-size: 1.4rem;
+    }
   }
 }
 </style>
